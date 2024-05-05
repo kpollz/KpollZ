@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Income classifier</title>
+</head>
+<body>
+    <div id="maintable">
+        <h1>Fill information</h1>
+        <form id="sub_form" action="/predict" method="POST">
+            <label >Age:</label>
+            <input type="text" id="age" name="age"><br><br>
+            <label >Final weight:</label>
+            <input type="text" id="final_weight" name="final_weight"><br><br>
+            <label >Total education years:</label>
+            <input type="text" id="total_education_yrs" name="total_education_yrs"><br><br>
+            <label >Capital gain:</label>
+            <input type="text" id="capital_gain" name="capital_gain"><br><br>
+            <label >Capital loss:</label>
+            <input type="text" id="capital_loss" name="capital_loss"><br><br>
+            <label >Hours per week:</label>
+            <input type="text" id="hrs_per_week" name="hrs_per_week"><br><br>
+            <label >X7:</label>
+            <input type="text" id="7" name="7"><br><br>
+            <label >X8:</label>
+            <input type="text" id="8" name="8"><br><br>
+            <label >X9:</label>
+            <input type="text" id="9" name="9"><br><br>
+            <label >X10:</label>
+            <input type="text" id="10" name="10"><br><br>
+            <label >X11:</label>
+            <input type="text" id="11" name="11"><br><br>
+            <label >X12:</label>
+            <input type="text" id="12" name="12"><br><br>
+            <label >X13:</label>
+            <input type="text" id="13" name="13"><br><br>
+            <label >X14:</label>
+            <input type="text" id="14" name="14"><br><br>
+            <label >X15:</label>
+            <input type="text" id="15" name="15"><br><br>
+            <label >X16:</label>
+            <input type="text" id="16" name="16"><br><br>
+            <label >X17:</label>
+            <input type="text" id="17" name="17"><br><br>
+            <label >X18:</label>
+            <input type="text" id="18" name="18"><br><br>
+            <label >X19:</label>
+            <input type="text" id="19" name="19"><br><br>
+            <label >X20:</label>
+            <input type="text" id="20" name="20"><br><br>
+            <label >X21:</label>
+            <input type="text" id="21" name="21"><br><br>
+            <label >X22:</label>
+            <input type="text" id="22" name="22"><br><br>
+            <label >X23:</label>
+            <input type="text" id="23" name="23"><br><br>
+            <label >X24:</label>
+            <input type="text" id="24" name="24"><br><br>
+            <label >X25:</label>
+            <input type="text" id="25" name="25"><br><br>
+            <label >X26:</label>
+            <input type="text" id="26" name="26"><br><br>
+            <label >X27:</label>
+            <input type="text" id="27" name="27"><br><br>
+            <label >X28:</label>
+            <input type="text" id="28" name="28"><br><br>
+            <label >X29:</label>
+            <input type="text" id="29" name="29"><br><br>
+            <label >X30:</label>
+            <input type="text" id="30" name="30"><br><br>
+            <label >X31:</label>
+            <input type="text" id="31" name="31"><br><br>
+            <label >X32:</label>
+            <input type="text" id="32" name="32"><br><br>
+            <label >X33:</label>
+            <input type="text" id="33" name="33"><br><br>
+            <label >X34:</label>
+            <input type="text" id="34" name="34"><br><br>
+            <label >X35:</label>
+            <input type="text" id="35" name="35"><br><br>
+            <label >X36:</label>
+            <input type="text" id="36" name="36"><br><br>
+            <label >X37:</label>
+            <input type="text" id="37" name="37"><br><br>
+            <label >X38:</label>
+            <input type="text" id="38" name="38"><br><br>
+            <label >X39:</label>
+            <input type="text" id="39" name="39"><br><br>
+            <label >X40:</label>
+            <input type="text" id="40" name="40"><br><br>
+            <label >X41:</label>
+            <input type="text" id="41" name="41"><br><br>
+            <label >X42:</label>
+            <input type="text" id="42" name="42"><br><br>
+            <label >X43:</label>
+            <input type="text" id="43" name="43"><br><br>
+            <label >X44:</label>
+            <input type="text" id="44" name="44"><br><br>
+            <label >X45:</label>
+            <input type="text" id="45" name="45"><br><br>
+            <label >X46:</label>
+            <input type="text" id="46" name="46"><br><br>
+            <label >X47:</label>
+            <input type="text" id="47" name="47"><br><br>
+            <label >X48:</label>
+            <input type="text" id="48" name="48"><br><br>
+            <label >X49:</label>
+            <input type="text" id="49" name="49"><br><br>
+            <label >X50:</label>
+            <input type="text" id="50" name="50"><br><br>
+            <label >X51:</label>
+            <input type="text" id="51" name="51"><br><br>
+            <label >X52:</label>
+            <input type="text" id="52" name="52"><br><br>
+            <label >X53:</label>
+            <input type="text" id="53" name="53"><br><br>
+            <label >X54:</label>
+            <input type="text" id="54" name="54"><br><br>
+            <label >X55:</label>
+            <input type="text" id="55" name="55"><br><br>
+            <label >X56:</label>
+            <input type="text" id="56" name="56"><br><br>
+            <label >X57:</label>
+            <input type="text" id="57" name="57"><br><br>
+            <label >X58:</label>
+            <input type="text" id="58" name="58"><br><br>
+            <label >X59:</label>
+            <input type="text" id="59" name="59"><br><br>
+            <label >X60:</label>
+            <input type="text" id="60" name="60"><br><br>
+            <label >X61:</label>
+            <input type="text" id="61" name="61"><br><br>
+            <label >X62:</label>
+            <input type="text" id="62" name="62"><br><br>
+            <label >X63:</label>
+            <input type="text" id="63" name="63"><br><br>
+            <label >X64:</label>
+            <input type="text" id="64" name="64"><br><br>
+            <label >X65:</label>
+            <input type="text" id="65" name="65"><br><br>
+            <label >X66:</label>
+            <input type="text" id="66" name="66"><br><br>
+            <label >X67:</label>
+            <input type="text" id="67" name="67"><br><br>
+            <label >X68:</label>
+            <input type="text" id="68" name="68"><br><br>
+            <label >X69:</label>
+            <input type="text" id="69" name="69"><br><br>
+            <label >X70:</label>
+            <input type="text" id="70" name="70"><br><br>
+            <label >X71:</label>
+            <input type="text" id="71" name="71"><br><br>
+            <label >X72:</label>
+            <input type="text" id="72" name="72"><br><br>
+            <label >X73:</label>
+            <input type="text" id="73" name="73"><br><br>
+            <label >X74:</label>
+            <input type="text" id="74" name="74"><br><br>
+            <label >X75:</label>
+            <input type="text" id="75" name="75"><br><br>
+            <label >X76:</label>
+            <input type="text" id="76" name="76"><br><br>
+            <label >X77:</label>
+            <input type="text" id="77" name="77"><br><br>
+            <label >X78:</label>
+            <input type="text" id="78" name="78"><br><br>
+            <label >X79:</label>
+            <input type="text" id="79" name="79"><br><br>
+            <label >X80:</label>
+            <input type="text" id="80" name="80"><br><br>
+            <label >X81:</label>
+            <input type="text" id="81" name="81"><br><br>
+            <label >X82:</label>
+            <input type="text" id="82" name="82"><br><br>
+            <label >X83:</label>
+            <input type="text" id="83" name="83"><br><br>
+            <label >X84:</label>
+            <input type="text" id="84" name="84"><br><br>
+            <label >X85:</label>
+            <input type="text" id="85" name="85"><br><br>
+            <label >X86:</label>
+            <input type="text" id="86" name="86"><br><br>
+            <label >X87:</label>
+            <input type="text" id="87" name="87"><br><br>
+            <label >X88:</label>
+            <input type="text" id="88" name="88"><br><br>
+            <label >X89:</label>
+            <input type="text" id="89" name="89"><br><br>
+            <label >X90:</label>
+            <input type="text" id="90" name="90"><br><br>
+            <label >X91:</label>
+            <input type="text" id="91" name="91"><br><br>
+            <label >X92:</label>
+            <input type="text" id="92" name="92"><br><br>
+            <label >X93:</label>
+            <input type="text" id="93" name="93"><br><br>
+            <label >X94:</label>
+            <input type="text" id="94" name="94"><br><br>
+            <label >X95:</label>
+            <input type="text" id="95" name="95"><br><br>
+            <label >X96:</label>
+            <input type="text" id="96" name="96"><br><br>
+            <label >X97:</label>
+            <input type="text" id="97" name="97"><br><br>
+            <label >X98:</label>
+            <input type="text" id="98" name="98"><br><br>
+            <label >X99:</label>
+            <input type="text" id="99" name="99"><br><br>
+            <label >X100:</label>
+            <input type="text" id="100" name="100"><br><br>
+            <label >X101:</label>
+            <input type="text" id="101" name="101"><br><br>
+            <label >X102:</label>
+            <input type="text" id="102" name="102"><br><br>
+            <label >X103:</label>
+            <input type="text" id="103" name="103"><br><br>
+            <label >X104:</label>
+            <input type="text" id="104" name="104"><br><br>
+            <label >X105:</label>
+            <input type="text" id="105" name="105"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
